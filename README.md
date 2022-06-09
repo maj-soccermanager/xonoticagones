@@ -63,13 +63,13 @@ These prerequisites need installing before deploying
    ```
 6. Deploy container
    ```sh
-  aws-vault exec Sandbox -- kubectl create -f .\gameserver.yaml
+   aws-vault exec Sandbox -- kubectl create -f .\gameserver.yaml
    ```
 7. Check container has deployed and what the port is
    ```sh
-  aws-vault exec Sandbox -- kubectl get gameservers
-  NAME      STATE   ADDRESS                                             PORT   NODE                                           AGE
-xonotic   Ready   ec2-54-216-76-253.eu-west-1.compute.amazonaws.com   7412   ip-192-168-12-185.eu-west-1.compute.internal   5s
+   aws-vault exec Sandbox -- kubectl get gameservers
+   NAME      STATE   ADDRESS                                             PORT   NODE                                           AGE
+   xonotic   Ready   ec2-54-216-76-253.eu-west-1.compute.amazonaws.com   7412   ip-192-168-12-185.eu-west-1.compute.internal   5s
    ```
 8. Load xonotic game, go to multiplaye, add the server address and port and press join. The address in the example would be "ec2-54-216-76-253.eu-west-1.compute.amazonaws.com:7412"
 
